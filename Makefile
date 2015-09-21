@@ -1,4 +1,5 @@
 # Makefile for the EPICS V4 pvaSrv module
+# an new line two that I need on trunk
 # here's a ridiculous change
 # yet another ridiculous change in the next line
 
