@@ -11,6 +11,8 @@
  * Only numeric scalar, timeStamp, and alarm are provided.
  */
 
+// Here is where I add my pretty cool feature (5)
+
 #ifndef CAMONITOR_H
 #define CAMONITOR_H
 
