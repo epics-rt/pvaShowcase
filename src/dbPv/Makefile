@@ -1,5 +1,8 @@
 # This is a Makefile fragment, see ../Makefile
 
+# Here is where I add my pretty cool feature (4)
+
+
 PLACE=$(EPICS_VERSION).$(EPICS_REVISION)
 
 ifeq ($(PLACE),3.16)

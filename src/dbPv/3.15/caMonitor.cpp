@@ -51,6 +51,8 @@ public:
     void connect();
     void start();
     void stop();
+    // Here is where I add my pretty cool feature (3)
+    void cool(void);
 
     CaMonitorRequesterPtr requester;
     string pvName;
@@ -60,6 +62,8 @@ public:
     evid myevid;
     caContextPtr context;
 };
+
+// Here is where I add my pretty cool feature (1)
 
 extern "C" {
 
@@ -254,6 +258,12 @@ void CaMonitorPvt::start()
     if(status!=ECA_NORMAL) {
         requester->message("ca_create_subscription failed",warningMessage);
     }
+}
+
+// Here is where I add my pretty cool feature (2)
+void CaMonitorPvt::cool(void)
+{
+    if(DbPvDebug::getLevel()>0) printf("caMonitor::cool is COOL\n");
 }
 
 void CaMonitorPvt::stop()
